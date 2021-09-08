@@ -1,5 +1,5 @@
-function App() {
-  const handleLogin = async (e) => {
+const LogIn = () => {
+    const handleLogin = async (e) => {
     e.preventDefault();
     const user_login_input = {
       email: e.target[0].value,
@@ -42,4 +42,4 @@ function App() {
   );
 }
 
-export default App;
+export default LogIn;
