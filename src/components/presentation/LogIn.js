@@ -1,5 +1,5 @@
 const LogIn = () => {
-    const handleLogin = async (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     const user_input = {
       email: e.target[0].value,
