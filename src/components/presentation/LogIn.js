@@ -1,13 +1,13 @@
 const LogIn = () => {
     const handleLogin = async (e) => {
     e.preventDefault();
-    const user_login_input = {
+    const user_input = {
       email: e.target[0].value,
       password: e.target[1].value
     }
 
-    const url1 = 'https://dry-brushlands-93092.herokuapp.com/auth/login';
-    postData(url1, user_login_input)
+    const url_log_in = 'https://dry-brushlands-93092.herokuapp.com/auth/login';
+    postData(url_log_in, user_input)
   }
 
   async function postData(url = '', data = {}) {
@@ -22,7 +22,7 @@ const LogIn = () => {
     console.log("After fetch: ...", response);
     return response.json()
       .then(data => {
-        console.log(data.auth_token); // JSON data parsed by `data.json()` call
+        console.log(data.auth_token);
       });
   }
 
