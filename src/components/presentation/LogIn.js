@@ -1,3 +1,5 @@
+import { Redirect } from "react-router-dom";
+
 const LogIn = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -7,11 +9,11 @@ const LogIn = () => {
     }
 
     const url_log_in = 'https://dry-brushlands-93092.herokuapp.com/auth/login';
-    postData(url_log_in, user_input)
+    postData(url_log_in, user_input);
+
   }
 
   async function postData(url = '', data = {}) {
-    console.log("From postData: ...", url, data)
     const response = await fetch(url, {
       method: 'POST',
       headers: {
@@ -19,26 +21,28 @@ const LogIn = () => {
       },
       body: JSON.stringify(data)
     });
-    console.log("After fetch: ...", response);
     return response.json()
       .then(data => {
-        console.log(data.auth_token);
+        sessionStorage.setItem('token', JSON.stringify(data.auth_token));
+        // let token = sessionStorage.getItem('token');
+        // console.log("session > token: ", token);
       });
   }
 
-
-
-
   return (
-    <div className="App">
-      <form onSubmit={ (e) => handleLogin(e) }>
-        <input type="email" placeholder="Your email" defaultValue="brad@mail.com" required />
-        <br />
-        <input type="password" placeholder="Your password" defaultValue="brad" required />
-        <br />
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+      <>
+        {sessionStorage.getItem('token') ? (<Redirect to="/" />) : (
+            <div className="App">
+                <form onSubmit={ (e) => handleLogin(e) }>
+                    <input type="email" placeholder="Your email" defaultValue="brad@mail.com" required />
+                    <br />
+                    <input type="password" placeholder="Your password" defaultValue="brad" required />
+                    <br />
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        )}
+      </>
   );
 }
 
