@@ -1,4 +1,5 @@
 import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const LogIn = () => {
   const handleLogin = async (e) => {
@@ -24,13 +25,14 @@ const LogIn = () => {
     return response.json()
       .then(data => {
         sessionStorage.setItem('token', JSON.stringify(data.auth_token));
-        // let token = sessionStorage.getItem('token');
-        // console.log("session > token: ", token);
+        let token = sessionStorage.getItem('token');
+        console.log("session > token: ", token);
       });
   }
 
   return (
       <>
+        <h1>Login page</h1>
         {sessionStorage.getItem('token') ? (<Redirect to="/" />) : (
             <div className="App">
                 <form onSubmit={ (e) => handleLogin(e) }>
@@ -42,6 +44,9 @@ const LogIn = () => {
                 </form>
             </div>
         )}
+        <br />
+        <div>Have not you signed up yet?</div>
+        <div>Go to the <Link to='/sign_up'>Sign up page</Link></div>
       </>
   );
 }

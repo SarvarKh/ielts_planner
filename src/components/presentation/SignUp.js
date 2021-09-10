@@ -38,6 +38,7 @@ const SignUp = () => {
 
     return (
         <div className="App">
+            <h1>SignUp page</h1>
             <form onSubmit={ (e) => handleSignUp(e) }>
                 <input type="text" placeholder="Your name" defaultValue="james" required />
                 <br />
