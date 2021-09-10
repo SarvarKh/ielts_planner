@@ -4,9 +4,10 @@ const Navbar = () => {
         console.log('token:', sessionStorage.getItem('token'));
     }
     return (
-        <nav>
-            <button type="button" onClick={logOut}>Log out</button>
-        </nav>
+        <>
+            <h1>Navbar</h1>
+            <hr/>
+        </>
     )
 }
 

@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
+import { Redirect, useHistory } from 'react-router-dom';
 
-  const Home = () => {
-    useEffect(() => {
+const Home = () => {
+  let history = useHistory();
+  useEffect(() => {
       fetchResults()
   }, []);
 
@@ -9,14 +11,24 @@ import React, { useEffect } from 'react';
     const url_results = 'https://dry-brushlands-93092.herokuapp.com/auth/results';
     let response = await fetch(url_results);
     let data = await response.text();
-    console.log(data);
   }
 
-  return (
-    <div className="App">
-        <h1>Home page</h1>
-    </div>
-  );
+  const logOut = () => {
+      sessionStorage.removeItem('token');
+      console.log('token:', sessionStorage.getItem('token'));
+      history.push('/log_in');
+  }
+
+  if (sessionStorage.getItem('token') === 'undefined' || sessionStorage.getItem('token') === null) {
+    return <Redirect to='/log_in'/> 
+  } else {
+    return (
+      <div>
+          <h1>Home page</h1>
+          <button type="button" onClick={logOut}>Log out</button>
+      </div>
+    );
+  }
 }
 
 export default Home;

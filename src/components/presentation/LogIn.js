@@ -1,7 +1,8 @@
-import { Redirect } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Link, useHistory, Redirect } from "react-router-dom";
 
 const LogIn = () => {
+  let history = useHistory();
+
   const handleLogin = async (e) => {
     e.preventDefault();
     const user_input = {
@@ -11,7 +12,6 @@ const LogIn = () => {
 
     const url_log_in = 'https://dry-brushlands-93092.herokuapp.com/auth/login';
     postData(url_log_in, user_input);
-
   }
 
   async function postData(url = '', data = {}) {
@@ -27,13 +27,13 @@ const LogIn = () => {
         sessionStorage.setItem('token', JSON.stringify(data.auth_token));
         let token = sessionStorage.getItem('token');
         console.log("session > token: ", token);
+        history.push('/home');
       });
   }
 
   return (
       <>
         <h1>Login page</h1>
-        {sessionStorage.getItem('token') ? (<Redirect to="/" />) : (
             <div className="App">
                 <form onSubmit={ (e) => handleLogin(e) }>
                     <input type="email" placeholder="Your email" defaultValue="brad@mail.com" required />
@@ -43,7 +43,7 @@ const LogIn = () => {
                     <button type="submit">Submit</button>
                 </form>
             </div>
-        )}
+        )
         <br />
         <div>Have not you signed up yet?</div>
         <div>Go to the <Link to='/sign_up'>Sign up page</Link></div>
