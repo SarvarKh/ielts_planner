@@ -1,20 +1,66 @@
-import React from 'react';
-import { Redirect } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Redirect, Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
 const Track = () => {
-  if (sessionStorage.getItem('token') === 'undefined' || sessionStorage.getItem('token') === null) {
-    return <Redirect to='/log_in'/> 
-  } else {
-    return (
-      <div>
-        <Navbar title = "Track" />
-        <h1>Track page</h1>
-        <Footer />
-      </div>
-    );
-  }
+    const [results, setResults] = useState([]);
+    useEffect(() => {
+        fetchResults();
+    }, []);
+
+    const fetchResults = () => {
+        const url = 'https://dry-brushlands-93092.herokuapp.com/results';
+        const token = sessionStorage.getItem('token');
+        console.log(token);
+        fetch(url, {
+          headers: {
+            Authorization: token,
+          }
+        })
+          .then(res => res.json())
+          .then(data => setResults(data));
+    }
+
+    const readableDate = (def_date_format) => {
+        let dateObj = new Date(def_date_format);
+        
+        let options = { month: 'long'};
+        let month = new Intl.DateTimeFormat('en-US', options).format(dateObj)
+        
+        let day = dateObj.getUTCDate();
+        let year = dateObj.getUTCFullYear();
+        let newdate = month + "-" + day + "-" + year;
+        return newdate
+    }
+    
+    if (sessionStorage.getItem('token') === 'undefined' || sessionStorage.getItem('token') === null) {
+        return <Redirect to='/log_in'/> 
+    } else {
+        return (
+        <div>
+            <Navbar title = "Track" />
+            <main>
+                <h2>Track page</h2>
+                {
+                    results.map((res) => (
+                        <Link
+                            to={{
+                                pathname: `/track/${res.id}`,
+                                state: res,
+                            }}
+                            key={res.id}
+                        >
+                            <div>{readableDate(res.created_at)}</div>
+                            <div>{res.overall_score}</div>
+                        </Link>
+                    ))
+                }
+            </main>
+            <Footer />
+        </div>
+        );
+    }
 }
 
 export default Track;

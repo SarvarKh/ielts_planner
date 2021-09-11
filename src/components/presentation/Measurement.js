@@ -21,14 +21,16 @@ const Measurement = () => {
     return (
       <div>
         <Navbar title = "Add Measurement" />
-        <h1>Measurement page</h1>
-        <form onSubmit={ (e) => handleAddingScores(e) }>
-          <MeasurementForm exam="writing_score" /><br/>
-          <MeasurementForm exam="speaking_score" /><br/>
-          <MeasurementForm exam="reading_score" /><br/>
-          <MeasurementForm exam="listening_score" /><br/>
-          <button type="submit">Submit</button>
-        </form>
+        <main>
+          <h1>Measurement page</h1>
+          <form onSubmit={ (e) => handleAddingScores(e) }>
+            <MeasurementForm exam="writing_score" /><br/>
+            <MeasurementForm exam="speaking_score" /><br/>
+            <MeasurementForm exam="reading_score" /><br/>
+            <MeasurementForm exam="listening_score" /><br/>
+            <button type="submit">Submit</button>
+          </form>
+        </main>
         <Footer />
       </div>
     );

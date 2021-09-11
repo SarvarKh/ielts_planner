@@ -24,7 +24,7 @@ const LogIn = () => {
     });
     return response.json()
       .then(data => {
-        sessionStorage.setItem('token', JSON.stringify(data.auth_token));
+        sessionStorage.setItem('token', data.auth_token);
         let token = sessionStorage.getItem('token');
         console.log("session > token: ", token);
         history.push('/measurement');
