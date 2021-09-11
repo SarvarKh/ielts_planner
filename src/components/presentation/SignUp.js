@@ -51,14 +51,12 @@ const SignUp = () => {
                 <br />
                 <input type="password" placeholder="Confirm Your password" required />
                 <br /><br />
-                <label name="level_initial">Your current level</label><br />
+                <label htmlFor="level_initial">Your current level</label><br />
                 <input type="number" step=".5" min="0" max="9" name="level_initial" defaultValue="6.5" required />
                 <br />
-                <label name="level_plan">Your desired level</label><br />
+                <label htmlFor="level_plan">Your desired level</label><br />
                 <input type="number" step=".5" min="0" max="9" name="level_plan" defaultValue="8.0" required />
                 <br /><br />
-                <input type="date" placeholder="Your due_date" required />
-                <br />
                 <button type="submit">Submit</button>
             </form>
             <br />
