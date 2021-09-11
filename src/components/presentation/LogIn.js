@@ -1,4 +1,4 @@
-import { Link, useHistory, Redirect } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const LogIn = () => {
   let history = useHistory();

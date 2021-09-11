@@ -1,18 +1,18 @@
+import { Link, useHistory } from "react-router-dom";
+
 const SignUp = () => {
+    let history = useHistory();
+
     const handleSignUp = async (e) => {
         e.preventDefault();
         const user_input = {
             name: e.target[0].value,
-            occupation: e.target[1].value,
-            photo: e.target[2].value,
-            email: e.target[3].value,
-            password: e.target[4].value,
-            password_confirmation: e.target[5].value,
-            age: e.target[6].value,
-            gender: e.target[7].value,
-            level_initial: e.target[8].value,
-            level_plan: e.target[9].value,
-            due_date: e.target[10].value
+            email: e.target[1].value,
+            password: e.target[2].value,
+            password_confirmation: e.target[3].value,
+            level_initial: e.target[4].value,
+            level_plan: e.target[5].value,
+            due_date: e.target[6].value
         }
 
         const url_sign_up = 'https://dry-brushlands-93092.herokuapp.com/signup';
@@ -30,40 +30,39 @@ const SignUp = () => {
         });
         console.log("After fetch: ...", response);
         return response.json()
-        .then(data => {
-            console.log(data.auth_token); // JSON data parsed by `data.json()` call
-        });
+            .then(data => {
+                sessionStorage.setItem('token', JSON.stringify(data.auth_token));
+                let token = sessionStorage.getItem('token');
+                console.log("session > token: ", token);
+                history.push('/measurement');
+            });
     }
 
 
     return (
         <div className="App">
-            <h1>SignUp page</h1>
+            <h1>Sign Up page</h1>
             <form onSubmit={ (e) => handleSignUp(e) }>
-                <input type="text" placeholder="Your name" defaultValue="james" required />
+                <input type="text" placeholder="Your name" required />
                 <br />
-                <input type="text" placeholder="Your occupation" defaultValue="Trainer" required />
+                <input type="email" placeholder="Your email" required />
                 <br />
-                <input type="text" placeholder="Your photo" defaultValue="her_img" required />
+                <input type="password" placeholder="Your password" required />
                 <br />
-                <input type="email" placeholder="Your email" defaultValue="james@mail.com" required />
+                <input type="password" placeholder="Confirm Your password" required />
+                <br /><br />
+                <label name="level_initial">Your current level</label><br />
+                <input type="number" step=".5" min="0" max="9" name="level_initial" defaultValue="6.5" required />
                 <br />
-                <input type="password" placeholder="Your password" defaultValue="james" required />
-                <br />
-                <input type="password" placeholder="Confirm Your password" defaultValue="james" required />
-                <br />
-                <input type="number" min="1" max="100" required />
-                <br />
-                <input type="text" placeholder="Your gender" defaultValue="male" required />
-                <br />
-                <input type="text" placeholder="Your level_initial" defaultValue="7.0" required />
-                <br />
-                <input type="text" placeholder="Your level_plan" defaultValue="8.0" required />
-                <br />
-                <input type="text" placeholder="Your due_date" defaultValue="2022-03-30" required />
+                <label name="level_plan">Your desired level</label><br />
+                <input type="number" step=".5" min="0" max="9" name="level_plan" defaultValue="8.0" required />
+                <br /><br />
+                <input type="date" placeholder="Your due_date" required />
                 <br />
                 <button type="submit">Submit</button>
             </form>
+            <br />
+            <div>Go back to the <Link to='/log_in'>Log in page</Link></div>
         </div>
     );
 }
