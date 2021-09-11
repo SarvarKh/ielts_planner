@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Redirect, Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import '../../circle-styling.css';
 
 const Track = () => {
     const [results, setResults] = useState([]);
@@ -52,6 +54,7 @@ const Track = () => {
                             key={res.id}
                         >
                             <div>{readableDate(res.created_at)}</div>
+                            <CircularProgressbar value={res.overall_score} maxValue={9} />
                             <div>{res.overall_score}</div>
                         </Link>
                     ))
