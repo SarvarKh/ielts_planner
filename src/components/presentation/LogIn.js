@@ -36,9 +36,9 @@ const LogIn = () => {
         <h1>Login page</h1>
             <div className="App">
                 <form onSubmit={ (e) => handleLogin(e) }>
-                    <input type="email" placeholder="Your email" defaultValue="brad@mail.com" required />
+                    <input type="email" placeholder="Your email" defaultValue="robert@mail.com" required />
                     <br />
-                    <input type="password" placeholder="Your password" defaultValue="brad" required />
+                    <input type="password" placeholder="Your password" defaultValue="robert" required />
                     <br />
                     <button type="submit">Submit</button>
                 </form>

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Redirect, useHistory } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import MeasurementForm from './MeasurementForm';
 
 const Measurement = () => {
   let history = useHistory();
@@ -29,6 +30,7 @@ const Measurement = () => {
         <Navbar title = "Add Measurement" />
         <h1>Measurement page</h1>
         <button type="button" onClick={logOut}>Log out</button>
+        <MeasurementForm />
         <Footer />
       </div>
     );
