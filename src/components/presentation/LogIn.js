@@ -27,7 +27,7 @@ const LogIn = () => {
         sessionStorage.setItem('token', JSON.stringify(data.auth_token));
         let token = sessionStorage.getItem('token');
         console.log("session > token: ", token);
-        history.push('/home');
+        history.push('/measurement');
       });
   }
 

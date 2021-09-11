@@ -3,22 +3,18 @@ import {
 } from 'react-router-dom';
 import LogIn from './LogIn';
 import SignUp from './SignUp';
-import Home from './Home';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Measurement from './Measurement';
 import Error from './Error';
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Switch>
         <Route exact path="/log_in" component={LogIn} />
         <Route exact path="/sign_up" component={SignUp} />
-        <Route exact path="/home" component={Home} />
+        <Route exact path="/measurement" component={Measurement} />
         <Route component={Error} />
       </Switch>
-      <Footer />
     </BrowserRouter>
   );
 }

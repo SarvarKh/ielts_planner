@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { Redirect, useHistory } from 'react-router-dom';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
-const Home = () => {
+const Measurement = () => {
   let history = useHistory();
   useEffect(() => {
       fetchResults()
@@ -24,11 +26,13 @@ const Home = () => {
   } else {
     return (
       <div>
-          <h1>Home page</h1>
-          <button type="button" onClick={logOut}>Log out</button>
+        <Navbar title = "Add Measurement" />
+        <h1>Measurement page</h1>
+        <button type="button" onClick={logOut}>Log out</button>
+        <Footer />
       </div>
     );
   }
 }
 
-export default Home;
+export default Measurement;
