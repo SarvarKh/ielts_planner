@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import MyChart from './MyChart';
 
 const Progress = () => {
     const [results, setResults] = useState([]);
@@ -30,9 +31,10 @@ const Progress = () => {
             <Navbar title = "Progress" />
                 <main>
                     <h2>Progress page</h2>
+                    <MyChart results={results} />
                     {
                         results.map((res) => (
-                            <div>{res.overall_score}</div>
+                            <div key={res.id}>{res.overall_score}</div>
                         ))
                     }
                 </main>
