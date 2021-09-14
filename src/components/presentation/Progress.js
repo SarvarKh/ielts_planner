@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import MyChart from './MyChart';
+import { CircularProgressbar } from 'react-circular-progressbar';
 
 const Progress = () => {
     const [results, setResults] = useState([]);
@@ -37,6 +38,9 @@ const Progress = () => {
                         current_scores
                         ? <>
                             <h3>Current scores</h3>
+                            <div className="prog-circle-score">
+                                <CircularProgressbar value={current_scores.overall_score} maxValue={9} text={`Overall Score\n ${current_scores.overall_score}`}/>
+                            </div>
                             <div>Speaking: {current_scores.speaking_score}</div>
                             <div>Listening: {current_scores.listening_score}</div>
                             <div>Writing: {current_scores.writing_score}</div>

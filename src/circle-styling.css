@@ -63,3 +63,9 @@
   .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
     stroke: transparent;
   }
+
+  .prog-circle-score .CircularProgressbar-text {
+    font-size: 0.7rem;
+    font-weight: bold;
+    
+  }

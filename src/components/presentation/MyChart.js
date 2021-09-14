@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Chart } from 'react-charts';
 
 const MyChart = ({results}) => {
+    const [currentUser, setCurrentUser] = useState([]);
+    useEffect(() => {
+        fetchCurrentUser();
+    }, []);
+
+    const fetchCurrentUser = () => {
+        const url = 'https://dry-brushlands-93092.herokuapp.com/info';
+        const token = sessionStorage.getItem('token');
+
+        fetch(url, {
+          headers: {
+            Authorization: token,
+          }
+        })
+          .then(res => res.json())
+          .then(data => setCurrentUser(data));
+    }
+    
     function defChartData(results) {
         let arr = []
         results.map((res) => {
@@ -23,20 +41,18 @@ const MyChart = ({results}) => {
     // required_daily_progress = diff_score 2.0 / diff_period 210 days = 0.01
     
     function defPlannedChartData() {
-        let planned_score = 8.0;
-        let initial_score = 6.0;
+        console.log('currentUser:', currentUser);
+        let planned_score = parseFloat(currentUser.level_plan);
+        let initial_score = parseFloat(currentUser.level_initial);
         let diff_score = planned_score - initial_score;
 
-        // let planned_date = "2022-04-30";
-        // let initial_date = "2021-09-30";
-        // let diff_date = planned_date - initial_date;
-        let diff_date = 30
+        let execution_period = 30
 
-        let required_daily_progress = diff_score/diff_date;
+        let required_daily_progress = diff_score/execution_period;
 
         let arr = [[0, initial_score]]
         let current = initial_score;
-        for (let i = 1; i <= diff_date; i++) {
+        for (let i = 1; i <= execution_period; i++) {
             arr.push([i, current += required_daily_progress])
         }
 
@@ -68,8 +84,9 @@ const MyChart = ({results}) => {
         // space of its parent element automatically
         <div
         style={{
-            width: '22rem',
-            height: '12rem'
+            width: '24rem',
+            height: '14rem',
+            padding: '1rem'
         }}
         >
         {results.length > 0 && <Chart data={data} axes={axes} />}
