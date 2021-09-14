@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Chart } from 'react-charts'
+import React from 'react';
+import { Chart } from 'react-charts';
 
 const MyChart = ({results}) => {
     function defChartData(results) {

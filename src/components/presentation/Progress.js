@@ -26,6 +26,7 @@ const Progress = () => {
     if (sessionStorage.getItem('token') === 'undefined' || sessionStorage.getItem('token') === null) {
         return <Redirect to='/log_in'/> 
     } else {
+        let current_scores = results[results.length-1];
         return (
         <div>
             <Navbar title = "Progress" />
@@ -33,9 +34,15 @@ const Progress = () => {
                     <h2>Progress page</h2>
                     <MyChart results={results} />
                     {
-                        results.map((res) => (
-                            <div key={res.id}>{res.overall_score}</div>
-                        ))
+                        current_scores
+                        ? <>
+                            <h3>Current scores</h3>
+                            <div>Speaking: {current_scores.speaking_score}</div>
+                            <div>Listening: {current_scores.listening_score}</div>
+                            <div>Writing: {current_scores.writing_score}</div>
+                            <div>Reading: {current_scores.reading_score}</div>
+                        </>
+                        : <div>Loading...</div>
                     }
                 </main>
             <Footer />
