@@ -1,0 +1,4 @@
+export const FETCH_RESULTS = 'FETCH_RESULTS';
+export const FETCH_CURRENT_USER = 'FETCH_CURRENT_USER';
+export const POST_NEW_USER = 'POST_NEW_USER';
+export const POST_NEW_RESULTS = 'POST_NEW_RESULTS';
