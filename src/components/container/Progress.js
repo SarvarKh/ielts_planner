@@ -14,7 +14,6 @@ const Progress = () => {
     const fetchResults = () => {
         const url = 'https://dry-brushlands-93092.herokuapp.com/results';
         const token = sessionStorage.getItem('token');
-        console.log(token);
         fetch(url, {
           headers: {
             Authorization: token,

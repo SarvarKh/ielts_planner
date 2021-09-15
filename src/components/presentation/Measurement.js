@@ -1,8 +1,8 @@
 import React from 'react';
 import { Redirect, useHistory } from 'react-router-dom';
-import Navbar from '../presentation/Navbar';
-import Footer from '../presentation/Footer';
-import MeasurementForm from '../presentation/MeasurementForm';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import MeasurementForm from './MeasurementForm';
 
 const Measurement = () => {
   let history = useHistory();
