@@ -6,16 +6,32 @@ const Footer = () => {
             <hr/>
             <ul>
                 <li>
-                    <Link to='./measurement'>Measurement</Link>
+                    <Link to={{
+                        pathname: "/measurement"
+                    }}>
+                        Measurement
+                    </Link>
                 </li>
                 <li>
-                    <Link to='./track'>Track</Link>
+                    <Link to={{
+                        pathname: "/track"
+                    }}>
+                        Track
+                    </Link>
                 </li>
                 <li>
-                    <Link to='./progress'>Progress</Link>
+                    <Link to={{
+                        pathname: "/progress"
+                    }}>
+                        Progress
+                    </Link>
                 </li>
                 <li>
-                    <Link to='./more'>More</Link>
+                    <Link to={{
+                        pathname: "/more"
+                    }}>
+                        More
+                    </Link>
                 </li>
             </ul>
         </footer>
