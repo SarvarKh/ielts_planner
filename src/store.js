@@ -8,7 +8,8 @@ const initialState = {
 //     detailMeal: {},
 //   },
     results: [],
-    currentUser: {}
+    detailResult: {},
+    currentUser: {},
 };
 
 const middleware = [thunk];
