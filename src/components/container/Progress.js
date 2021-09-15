@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Redirect } from 'react-router-dom';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from '../presentation/Navbar';
+import Footer from '../presentation/Footer';
 import MyChart from './MyChart';
 import { CircularProgressbar } from 'react-circular-progressbar';
 

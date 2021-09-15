@@ -1,7 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from '../presentation/Navbar';
+import Footer from '../presentation/Footer';
 
 const More = () => {
   if (sessionStorage.getItem('token') === 'undefined' || sessionStorage.getItem('token') === null) {
