@@ -20,7 +20,6 @@ const SignUp = () => {
     }
 
     async function postData(url = '', data = {}) {
-        console.log("From postData: ...", url, data)
         const response = await fetch(url, {
         method: 'POST',
         headers: {
@@ -28,7 +27,6 @@ const SignUp = () => {
         },
         body: JSON.stringify(data)
         });
-        console.log("After fetch: ...", response);
         return response.json()
             .then(data => {
                 sessionStorage.setItem('token', JSON.stringify(data.auth_token));
