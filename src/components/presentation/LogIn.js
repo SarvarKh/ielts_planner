@@ -30,22 +30,24 @@ const LogIn = () => {
   }
 
   return (
-      <>
-        <h1>Login page</h1>
-            <div className="App">
-                <form onSubmit={ (e) => handleLogin(e) }>
-                    <input type="email" placeholder="Your email" defaultValue="robert@mail.com" required />
-                    <br />
-                    <input type="password" placeholder="Your password" defaultValue="robert" required />
-                    <br />
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        )
-        <br />
-        <div>Have not you signed up yet?</div>
-        <div>Go to the <Link to='/sign_up'>Sign up page</Link></div>
-      </>
+      <div className='login'>
+        <div>
+          <i class="fas fa-user-circle"></i>
+        </div>
+
+        <form onSubmit={ (e) => handleLogin(e) }>
+            <input type="email" placeholder="Your email" required />
+            
+            <input type="password" placeholder="Password" required />
+            
+            <button type="submit">Log in</button>
+        </form>
+        
+        <div className="signup-text">
+          <div>Have not you signed up yet?</div>
+          <div>Go to the <Link to='/sign_up'>Sign up page</Link></div>
+        </div>
+      </div>
   );
 }
 
