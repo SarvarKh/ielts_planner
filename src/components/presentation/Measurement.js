@@ -50,7 +50,7 @@ const Measurement = () => {
   } else {
     return (
       <div>
-        <Navbar title = "Add Measurement" />
+        <Navbar title = "Add measurement" />
         <main>
           <h1>Measurement page</h1>
           <form onSubmit={ (e) => handleAddingScores(e) }>

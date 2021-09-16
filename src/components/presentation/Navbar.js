@@ -10,9 +10,10 @@ const Navbar = ({title}) => {
     }
     return (
         <nav>
-            <div>{title}</div>
-            <button type="button" onClick={logOut}>Log out</button>
-            <hr/>
+            <div className="n-title">{title}</div>
+            <button type="button" onClick={logOut}>
+                <i class="fas fa-power-off"></i>
+            </button>
         </nav>
     )
 }

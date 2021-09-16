@@ -114,6 +114,31 @@ footer ul {
   color: #fff;
 }
 
+/* Navbar */
+nav {
+  background-color: var(--first);
+  padding: 1.1rem 0;
+  color: #fff;
+}
+
+.n-title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav button {
+  border: none;
+  background: none;
+  position: absolute;
+  right: 1rem;
+  top: 1.1rem;
+}
+
+.fa-power-off {
+  font-size: 1.2rem;
+  color: #fff;
+}
 
 
 
