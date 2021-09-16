@@ -30,7 +30,7 @@ const LogIn = () => {
   }
 
   return (
-      <div className='login'>
+      <div className='authen-page'>
         <div>
           <i class="fas fa-user-circle"></i>
         </div>
@@ -43,9 +43,15 @@ const LogIn = () => {
             <button type="submit">Log in</button>
         </form>
         
-        <div className="signup-text">
+        <div className="authen-text">
           <div>Have not you signed up yet?</div>
           <div>Go to the <Link to='/sign_up'>Sign up page</Link></div>
+        </div>
+
+        <div className="ielts-text authen-text">
+          <div>
+            Check out <Link to={{ pathname: "https://www.ielts.org/about-ielts/what-is-ielts" }} target="_blank">the link</Link> to find out more about IELTS.
+          </div>
         </div>
       </div>
   );

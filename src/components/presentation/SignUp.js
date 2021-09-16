@@ -36,27 +36,25 @@ const SignUp = () => {
 
 
     return (
-        <div className="App">
-            <h1>Sign Up page</h1>
+        <div className='authen-page'>
+            <div>
+                <i class="fas fa-user-circle"></i>
+            </div>
             <form onSubmit={ (e) => handleSignUp(e) }>
                 <input type="text" placeholder="Your name" required />
-                <br />
                 <input type="email" placeholder="Your email" required />
-                <br />
                 <input type="password" placeholder="Your password" required />
-                <br />
                 <input type="password" placeholder="Confirm Your password" required />
-                <br /><br />
-                <label htmlFor="level_initial">Your current level</label><br />
-                <input type="number" step=".5" min="0" max="9" name="level_initial" defaultValue="6.5" required />
-                <br />
-                <label htmlFor="level_plan">Your desired level</label><br />
-                <input type="number" step=".5" min="0" max="9" name="level_plan" defaultValue="8.0" required />
-                <br /><br />
+                
+                <label htmlFor="level_initial">Your current IELTS score</label>
+                <input type="number" step=".5" min="0" max="9" name="level_initial" placeholder="Enter 0 ~ 9" required />
+                
+                <label htmlFor="level_plan">Your desired IELTS score</label>
+                <input type="number" step=".5" min="0" max="9" name="level_plan" placeholder="Enter 0 ~ 9" required />
+                
                 <button type="submit">Submit</button>
             </form>
-            <br />
-            <div>Go back to the <Link to='/log_in'>Log in page</Link></div>
+            <div className="authen-text">Go back to the <Link to='/log_in'>Log in page</Link></div>
         </div>
     );
 }

@@ -15,7 +15,7 @@
   margin: 1rem;
 }
 
-.login {
+.authen-page {
   margin: 3rem 1rem;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@
   height: 85vh;
 }
 
-.login i {
+.authen-page i {
   margin-bottom: 2rem;
 }
 
@@ -34,12 +34,12 @@
   color: var(--first);
 }
 
-.login form {
+.authen-page form {
   display: flex;
   flex-direction: column;
 }
 
-.login input {
+.authen-page input {
   border: 1px solid var(--first);
   border-radius: 0.3rem;
   margin-bottom: 0.5rem;
@@ -47,7 +47,7 @@
   font-size: 0.9rem;
 }
 
-.login button {
+.authen-page button {
   background-color: var(--first);
   border: none;
   border-radius: 0.3rem;
@@ -57,21 +57,32 @@
   font-weight: bold;
 }
 
-.signup-text {
+.authen-text {
   color: var(--second);
   margin-top: 1rem;
   line-height: 1.4rem;
 }
 
-.signup-text a {
+.authen-text a {
   text-decoration: none;
   color: #62B5E5;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
+.authen-page label {
+  color: var(--second);
+  font-size: 0.8rem;
+  margin: 0.2rem 0 0.2rem 0;
+}
 
-
-
+.ielts-text {
+  color: var(--second);
+  font-size: 0.8rem;
+  margin-top: 4rem;
+  line-height: 1.4rem;
+  width: 60%;
+  text-align: center;
+}
 
 
 
