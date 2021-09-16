@@ -70,13 +70,8 @@ const UnpackLineChart = ({results, currentUser}) => {
     const lineChart = (
         // A react-chart hyper-responsively and continuously fills the available
         // space of its parent element automatically
-        <div
-        style={{
-            width: '24rem',
-            height: '14rem',
-        }}
-        >
-        {<Chart data={data} axes={axes} />}
+        <div className="graph">
+            {<Chart data={data} axes={axes} />}
         </div>
     )
     return lineChart

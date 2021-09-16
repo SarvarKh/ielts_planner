@@ -68,3 +68,13 @@
     font-size: 0.6rem;
     font-weight: bold;
   }
+
+  .prog-circle-score .CircularProgressbar-text {
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
+
+  .progress .CircularProgressbar-text {
+  font-size: 0.6rem;
+  font-weight: bold;
+}
