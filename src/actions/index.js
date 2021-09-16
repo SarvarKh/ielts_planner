@@ -1,9 +1,7 @@
 import {
     FETCH_RESULTS,
     FETCH_DETAIL_RESULT,
-    FETCH_CURRENT_USER,
-    POST_NEW_USER,
-    POST_NEW_RESULTS,
+    FETCH_CURRENT_USER
 } from './types';
 
 const fetchResults = () => (dispatch) => {
@@ -42,7 +40,26 @@ const fetchDetailResult = (resultID) => (dispatch) => {
   return () => abortCont.abort();
 };
 
+const fetchCurrentUser = () => (dispatch) => {
+  const abortCont = new AbortController();
+  const url = 'https://dry-brushlands-93092.herokuapp.com/info';
+  const token = sessionStorage.getItem('token');
+  fetch(url, {
+    headers: {
+      Authorization: token,
+    }
+  })
+    .then((res) => res.json())
+    .then((data) => dispatch({
+      type: FETCH_CURRENT_USER,
+      payload: data,
+    }));
+
+  return () => abortCont.abort();
+};
+
 export {
     fetchResults,
-    fetchDetailResult
+    fetchDetailResult,
+    fetchCurrentUser
 };
