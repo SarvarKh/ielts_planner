@@ -7,7 +7,7 @@ const UnpackMore = ({currentUser}) => {
         <Navbar title = "More" />
         <main>
           <div className="m-header">
-            <i class="fas fa-user-circle p-avat"></i>
+            <i className="fas fa-user-circle p-avat"></i>
             <div>
               <div>{currentUser.name}</div>
               <div className="m-email">{currentUser.email}</div>
@@ -15,27 +15,27 @@ const UnpackMore = ({currentUser}) => {
           </div>
           <div className="more-list">
             <div>
-              <i class="fas fa-crosshairs"></i>
+              <i className="fas fa-crosshairs"></i>
               <div>Your goal {currentUser.level_plan}</div>
             </div>
             <div>
-              <i class="fas fa-clipboard"></i>
+              <i className="fas fa-clipboard"></i>
               <div>Your started at {currentUser.level_initial}</div>
             </div>
             <div>
-              <i class="fas fa-envelope"></i>
+              <i className="fas fa-envelope"></i>
               <div>Mailing list</div>
             </div>
             <div>
-              <i class="fas fa-user"></i>
+              <i className="fas fa-user"></i>
               <div>Your profile</div>
             </div>
             <div>
-              <i class="fas fa-cog"></i>
+              <i className="fas fa-cog"></i>
               <div>Settings</div>
             </div>
             <div>
-              <i class="fas fa-question-circle"></i>
+              <i className="fas fa-question-circle"></i>
               <div>Help</div>
             </div>
           </div>

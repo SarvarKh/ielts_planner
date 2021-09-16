@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import {fetchCurrentUser} from '../../actions/index';
 import UnpackMore from '../presentation/UnpackMore';
 
 const More = ({currentUser, fetchCurrentUser}) => {
-  console.log("currentUser", currentUser.currentUser);
   useEffect(() => {
     fetchCurrentUser();
 }, [fetchCurrentUser]);
@@ -22,3 +22,8 @@ const mapStateToProps = (state) => ({
 })
 
 export default connect(mapStateToProps, { fetchCurrentUser })(More);
+
+More.propTypes = {
+  currentUser: PropTypes.instanceOf(Object).isRequired,
+  fetchCurrentUser: PropTypes.func.isRequired,
+};

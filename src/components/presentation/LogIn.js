@@ -32,7 +32,7 @@ const LogIn = () => {
   return (
       <div className='authen-page'>
         <div>
-          <i class="fas fa-user-circle"></i>
+          <i className="fas fa-user-circle"></i>
         </div>
 
         <form onSubmit={ (e) => handleLogin(e) }>

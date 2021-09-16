@@ -23,19 +23,19 @@ const UnpackTrackDetail = ({detailResult}) => {
                 <CircularProgressbar value={detailResult.overall_score} maxValue={9} text={`Overall Score\n ${detailResult.overall_score}`}/>
                 <div className="t-scores">
                     <div>
-                        <i class="fas fa-microphone"></i>
+                        <i className="fas fa-microphone"></i>
                         <div>Speaking: {detailResult.speaking_score}</div>
                     </div>
                     <div>
-                        <i class="fas fa-headphones"></i>
+                        <i className="fas fa-headphones"></i>
                         <div>Listening: {detailResult.listening_score}</div>
                     </div>
                     <div>
-                        <i class="fas fa-pen"></i>
+                        <i className="fas fa-pen"></i>
                         <div>Writing: {detailResult.writing_score}</div>
                     </div>
                     <div>
-                        <i class="fas fa-book"></i>
+                        <i className="fas fa-book"></i>
                         <div>Reading: {detailResult.reading_score}</div>
                     </div>
                 </div>

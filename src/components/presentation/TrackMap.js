@@ -38,7 +38,7 @@ const TrackMap = ({results, clickOnDetailResult}) => {
                                 <div>{res.overall_score}</div>
                                 <div>score</div>
                             </div>
-                            <i class="fas fa-arrow-circle-right"></i>
+                            <i className="fas fa-arrow-circle-right"></i>
                         </Link>
                     ))
                 }

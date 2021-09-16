@@ -12,7 +12,7 @@ const Navbar = ({title}) => {
         <nav>
             <div className="n-title">{title}</div>
             <button type="button" onClick={logOut}>
-                <i class="fas fa-power-off"></i>
+                <i className="fas fa-power-off"></i>
             </button>
         </nav>
     )

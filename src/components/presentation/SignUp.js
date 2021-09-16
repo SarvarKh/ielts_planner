@@ -38,7 +38,7 @@ const SignUp = () => {
     return (
         <div className='authen-page'>
             <div>
-                <i class="fas fa-user-circle"></i>
+                <i className="fas fa-user-circle"></i>
             </div>
             <form onSubmit={ (e) => handleSignUp(e) }>
                 <input type="text" placeholder="Your name" required />
