@@ -8,7 +8,7 @@ const TrackDetail = ({ detailResult, fetchDetailResult }) => {
     const { id } = useParams();
     useEffect(() => {
         fetchDetailResult(id);
-    }, []);
+    }, [fetchDetailResult, id]);
 
     return (
         <main>

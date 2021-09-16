@@ -18,7 +18,6 @@ const UnpackLineChart = ({results, currentUser}) => {
     }
     
     function defPlannedChartData() {
-        console.log("currentUser", currentUser.currentUser);
         currentUser = {
             created_at: "2021-09-06T14:27:15.787Z",
             due_date: "2022-10-30",
@@ -56,7 +55,8 @@ const UnpackLineChart = ({results, currentUser}) => {
         () => [
             defChartData(results),
             defPlannedChartData()
-        ]
+        ],
+        [results]
     )
 
     const axes = React.useMemo(

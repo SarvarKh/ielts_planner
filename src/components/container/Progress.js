@@ -7,7 +7,7 @@ import UnpackProgress from '../presentation/UnpackProgress';
 const Progress = ({fetchResults, results}) => {
     useEffect(() => {
         fetchResults();
-    }, []);
+    }, [fetchResults]);
 
     if (sessionStorage.getItem('token') === 'undefined' || sessionStorage.getItem('token') === null) {
         return <Redirect to='/log_in'/> 

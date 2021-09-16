@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { fetchResults, fetchDetailResult } from '../../actions/index'
-import { Redirect, Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import TrackMap from '../presentation/TrackMap';
 
 const Track = ({fetchResults, fetchDetailResult, results}) => {
     useEffect(() => {
         fetchResults();
-    }, []);
+    }, [fetchResults]);
         
     const clickOnDetailResult = (e) => {
         fetchDetailResult(e);
