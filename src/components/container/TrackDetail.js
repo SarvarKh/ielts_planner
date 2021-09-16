@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { fetchDetailResult } from '../../actions';
 import { useParams } from 'react-router-dom';
 import UnpackTrackDetail from '../presentation/UnpackTrackDetail';
@@ -30,3 +31,8 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps, { fetchDetailResult })(TrackDetail);
+
+TrackDetail.propTypes = {
+  detailResult: PropTypes.instanceOf(Object).isRequired,
+  fetchDetailResult: PropTypes.func.isRequired,
+};

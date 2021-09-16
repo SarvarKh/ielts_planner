@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { fetchResults, fetchDetailResult } from '../../actions/index'
 import { Redirect } from 'react-router-dom';
 import TrackMap from '../presentation/TrackMap';
@@ -25,3 +26,9 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps, { fetchResults, fetchDetailResult })(Track);
+
+Track.propTypes = {
+    results: PropTypes.instanceOf(Object).isRequired,
+    fetchResults: PropTypes.func.isRequired,
+    fetchDetailResult: PropTypes.func.isRequired,
+};
