@@ -20,10 +20,9 @@ const TrackMap = ({results, clickOnDetailResult}) => {
     return (
         <div>
             <Navbar title = "Track it" />
-            <main>
-                <h2>Track page</h2>
+            <main className="track">
                 {
-                    results.map((res) => (
+                    results.slice(0).reverse().map((res) => (
                         <Link
                             to={{
                                 pathname: `/track/${res.id}`,
@@ -31,10 +30,15 @@ const TrackMap = ({results, clickOnDetailResult}) => {
                             }}
                             key={res.id}
                             onClick={() => clickOnDetailResult(res.id)}
+                            className="track-item"
                         >
-                            <div>{readableDate(res.created_at)}</div>
                             <CircularProgressbar value={res.overall_score} maxValue={9} />
-                            <div>{res.overall_score}</div>
+                            <div>{readableDate(res.created_at)}</div>
+                            <div>
+                                <div>{res.overall_score}</div>
+                                <div>score</div>
+                            </div>
+                            <i class="fas fa-arrow-circle-right"></i>
                         </Link>
                     ))
                 }

@@ -147,6 +147,8 @@ nav button {
 /* Measurement */
 main {
   padding: 4rem 0;
+  background: #f3f4f6;
+  min-height: 100vh;
 }
 
 .measurement {
@@ -207,4 +209,22 @@ main {
   padding: 0.5rem 1rem;
   width: max-content;
   margin: 0 auto;
+}
+
+/* Track page */
+.track {
+  justify-content: space-between;
+}
+
+.track-item {
+  display: flex;
+  margin: 0.5rem 0;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.track-item .CircularProgressbar {
+  width: 12%;
 }
