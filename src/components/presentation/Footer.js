@@ -9,28 +9,32 @@ const Footer = () => {
                     <Link to={{
                         pathname: "/measurement"
                     }}>
-                        Measurement
+                        <div>Icon</div>
+                        <div>Add measure</div>
                     </Link>
                 </li>
                 <li>
                     <Link to={{
                         pathname: "/track"
                     }}>
-                        Track
+                        <div>Icon</div>
+                        <div>Track it</div>
                     </Link>
                 </li>
                 <li>
                     <Link to={{
                         pathname: "/progress"
                     }}>
-                        Progress
+                        <div>Icon</div>
+                        <div>Your progress</div>
                     </Link>
                 </li>
                 <li>
                     <Link to={{
                         pathname: "/more"
                     }}>
-                        More
+                        <div>Icon</div>
+                        <div>More</div>
                     </Link>
                 </li>
             </ul>

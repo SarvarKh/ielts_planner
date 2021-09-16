@@ -9,11 +9,11 @@ const Navbar = ({title}) => {
         history.push('/log_in');
     }
     return (
-        <>
-            <h1>Navbar  - {title}</h1>
+        <nav>
+            <div>{title}</div>
             <button type="button" onClick={logOut}>Log out</button>
             <hr/>
-        </>
+        </nav>
     )
 }
 

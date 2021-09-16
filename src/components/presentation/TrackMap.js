@@ -19,7 +19,7 @@ const TrackMap = ({results, clickOnDetailResult}) => {
 
     return (
         <div>
-            <Navbar title = "Track" />
+            <Navbar title = "Track it" />
             <main>
                 <h2>Track page</h2>
                 {

@@ -17,7 +17,7 @@ const UnpackTrackDetail = ({detailResult}) => {
 
     return (
         <div>
-            <Navbar title = "Add Measurement" />
+            <Navbar title = "Track it" />
             <div>{readableDate(detailResult.created_at)}</div>
             <h3>Current scores</h3>
             <div className="prog-circle-score">
