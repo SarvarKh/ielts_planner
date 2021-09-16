@@ -305,3 +305,36 @@ main {
   width: 80%;
   margin: 0.3rem auto;
 }
+
+/* More */
+.m-header {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  color: var(--second);
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+.p-avat {
+  font-size: 4rem;
+  margin: 0 1rem;
+}
+
+.more-list {
+  margin: 0 1rem;
+  color: var(--second);
+}
+
+.more-list i {
+  margin-right: 1rem;
+}
+
+.more-list > div {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.m-email {
+  color: var(--first);
+}
