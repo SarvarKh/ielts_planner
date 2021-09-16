@@ -8,7 +8,7 @@
      * This fixes an issue where the CircularProgressbar svg has
      * 0 width inside a "display: flex" container, and thus not visible.
      */
-    width: 10%;
+    width: 40%;
     /*
      * This fixes a centering issue with CircularProgressbarWithChildren:
      * https://github.com/kevinsqi/react-circular-progressbar/issues/94
@@ -65,7 +65,7 @@
   }
 
   .prog-circle-score .CircularProgressbar-text {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: bold;
     
   }

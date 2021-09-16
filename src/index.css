@@ -86,7 +86,7 @@ a {
 
 /* Footer */
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -116,9 +116,13 @@ footer ul {
 
 /* Navbar */
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: var(--first);
   padding: 1.1rem 0;
   color: #fff;
+  z-index: 2;
 }
 
 .n-title {
@@ -140,40 +144,67 @@ nav button {
   color: #fff;
 }
 
+/* Measurement */
+main {
+  padding: 4rem 0;
+}
 
+.measurement {
+  display: flex;
+  flex-direction: column;
+}
 
+.measurement div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  align-items: center;
+}
 
-
-
-
-
-
-
-
-/* Tooltip container */
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
-/* Tooltip text */
 .tooltip .tooltiptext {
   display: none;
   width: 120px;
-  background-color: rgb(92, 92, 92);
+  background-color: var(--second);
   color: #fff;
   text-align: center;
   padding: 0.5rem 1rem;
   border-radius: 6px;
 
-  /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
   top: 105%;
+  left: 60%;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   display: inline-block;
+}
+
+.tooltip label {
+  color: var(--second);
+}
+
+.tooltip input {
+  background: none;
+  border: 1px solid var(--first);
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.measurement button {
+  border: none;
+  border-radius: 0.2rem;
+  background: var(--third);
+  color: var(--second);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  width: max-content;
+  margin: 0 auto;
 }
