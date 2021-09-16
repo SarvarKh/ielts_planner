@@ -64,8 +64,7 @@
     stroke: transparent;
   }
 
-  .prog-circle-score .CircularProgressbar-text {
+  .t-con .CircularProgressbar-text {
     font-size: 0.6rem;
     font-weight: bold;
-    
   }

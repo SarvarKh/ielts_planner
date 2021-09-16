@@ -16,19 +16,32 @@ const UnpackTrackDetail = ({detailResult}) => {
     }
 
     return (
-        <div>
+        <>
             <Navbar title = "Track it" />
-            <div>{readableDate(detailResult.created_at)}</div>
-            <h3>Current scores</h3>
-            <div className="prog-circle-score">
+            <div className="t-con">
+                <div className='t-date'>{readableDate(detailResult.created_at)}</div>
                 <CircularProgressbar value={detailResult.overall_score} maxValue={9} text={`Overall Score\n ${detailResult.overall_score}`}/>
+                <div className="t-scores">
+                    <div>
+                        <i class="fas fa-microphone"></i>
+                        <div>Speaking: {detailResult.speaking_score}</div>
+                    </div>
+                    <div>
+                        <i class="fas fa-headphones"></i>
+                        <div>Listening: {detailResult.listening_score}</div>
+                    </div>
+                    <div>
+                        <i class="fas fa-pen"></i>
+                        <div>Writing: {detailResult.writing_score}</div>
+                    </div>
+                    <div>
+                        <i class="fas fa-book"></i>
+                        <div>Reading: {detailResult.reading_score}</div>
+                    </div>
+                </div>
             </div>
-            <div>Speaking: {detailResult.speaking_score}</div>
-            <div>Listening: {detailResult.listening_score}</div>
-            <div>Writing: {detailResult.writing_score}</div>
-            <div>Reading: {detailResult.reading_score}</div>
             <Footer />
-        </div>
+        </>
     )
 }
 export default UnpackTrackDetail;

@@ -228,3 +228,44 @@ main {
 .track-item .CircularProgressbar {
   width: 12%;
 }
+
+/* result detail */
+.t-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.t-date {
+  color: var(--second);
+}
+
+.t-con > div {
+  margin: 2rem 0;
+}
+
+.t-scores {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--second);
+}
+
+.t-scores > div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem 0;
+}
+
+.t-scores i {
+  font-size: 3rem;
+  color: var(--second);
+  margin: 0 auto 0.5rem auto;
+}
+
+.t-scores i ~ div {
+  text-align: center;
+}

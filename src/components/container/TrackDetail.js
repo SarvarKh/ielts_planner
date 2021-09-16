@@ -17,8 +17,7 @@ const TrackDetail = ({ detailResult, fetchDetailResult }) => {
             ? <UnpackTrackDetail detailResult={detailResult.detailResult} />
             : (
               <h2>
-                Please go back to the previous page and select result to see details...
-                {id}
+                Loading...
               </h2>
             )
         }
