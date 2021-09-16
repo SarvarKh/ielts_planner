@@ -17,7 +17,7 @@
   }
   
   .CircularProgressbar .CircularProgressbar-path {
-    stroke: #3e98c7;
+    stroke: var(--first);
     stroke-linecap: round;
     transition: stroke-dashoffset 0.5s ease 0s;
   }
@@ -49,7 +49,7 @@
    *   />
    */
   .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background {
-    fill: #3e98c7;
+    fill: var(--first);
   }
   
   .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
