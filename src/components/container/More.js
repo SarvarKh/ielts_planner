@@ -1,20 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import Navbar from '../presentation/Navbar';
-import Footer from '../presentation/Footer';
+import {fetchCurrentUser} from '../../actions/index';
+import UnpackMore from '../presentation/UnpackMore';
 
-const More = () => {
+const More = ({currentUser, fetchCurrentUser}) => {
+  console.log("currentUser", currentUser.currentUser);
+  useEffect(() => {
+    fetchCurrentUser();
+}, [fetchCurrentUser]);
+
   if (sessionStorage.getItem('token') === 'undefined' || sessionStorage.getItem('token') === null) {
     return <Redirect to='/log_in'/> 
   } else {
-    return (
-      <div>
-        <Navbar title = "More" />
-        <h1>More page</h1>
-        <Footer />
-      </div>
-    );
+    return currentUser.currentUser !== undefined ? <UnpackMore currentUser={currentUser.currentUser} /> : <h2>Loading...</h2>
   }
 }
 
-export default More;
+const mapStateToProps = (state) => ({
+  currentUser: state.currentUser
+})
+
+export default connect(mapStateToProps, { fetchCurrentUser })(More);
