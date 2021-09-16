@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { fetchResults } from '../../actions';
 import UnpackProgress from '../presentation/UnpackProgress';
 
@@ -21,3 +22,8 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps, { fetchResults })(Progress);
+
+Progress.propTypes = {
+    results: PropTypes.instanceOf(Object).isRequired,
+    fetchResults: PropTypes.func.isRequired,
+};

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import {fetchCurrentUser} from '../../actions/index';
 import UnpackLineChart from '../presentation/UnpackLineChart';
 
@@ -16,3 +17,8 @@ const mapStateToProps = (state) => ({
 })
 
 export default connect(mapStateToProps, { fetchCurrentUser })(MyChart);
+
+MyChart.propTypes = {
+    currentUser: PropTypes.instanceOf(Object).isRequired,
+    fetchCurrentUser: PropTypes.func.isRequired,
+};
