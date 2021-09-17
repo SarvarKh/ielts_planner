@@ -1,7 +1,7 @@
 import {
-    FETCH_RESULTS,
-    FETCH_DETAIL_RESULT,
-    FETCH_CURRENT_USER
+  FETCH_RESULTS,
+  FETCH_DETAIL_RESULT,
+  FETCH_CURRENT_USER,
 } from './types';
 
 const fetchResults = () => (dispatch) => {
@@ -11,7 +11,7 @@ const fetchResults = () => (dispatch) => {
   fetch(url, {
     headers: {
       Authorization: token,
-    }
+    },
   })
     .then((res) => res.json())
     .then((data) => dispatch({
@@ -29,7 +29,7 @@ const fetchDetailResult = (resultID) => (dispatch) => {
   fetch(url, {
     headers: {
       Authorization: token,
-    }
+    },
   })
     .then((res) => res.json())
     .then((data) => dispatch({
@@ -47,7 +47,7 @@ const fetchCurrentUser = () => (dispatch) => {
   fetch(url, {
     headers: {
       Authorization: token,
-    }
+    },
   })
     .then((res) => res.json())
     .then((data) => dispatch({
@@ -59,7 +59,7 @@ const fetchCurrentUser = () => (dispatch) => {
 };
 
 export {
-    fetchResults,
-    fetchDetailResult,
-    fetchCurrentUser
+  fetchResults,
+  fetchDetailResult,
+  fetchCurrentUser,
 };

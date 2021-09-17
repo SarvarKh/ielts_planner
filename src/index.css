@@ -73,6 +73,12 @@ a {
   color: var(--second);
   font-size: 0.8rem;
   margin: 0.2rem 0 0.2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+label span {
+  margin-bottom: 0.2rem;
 }
 
 .ielts-text {

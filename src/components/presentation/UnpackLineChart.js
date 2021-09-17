@@ -1,80 +1,74 @@
 import React from 'react';
 import { Chart } from 'react-charts';
+import PropTypes from 'prop-types';
 
-const UnpackLineChart = ({results, currentUser}) => {
-    function defChartData(results) {
-        let arr = []
-        results.map((res) => {
-            arr.push([results.indexOf(res)+1, parseFloat(res.overall_score)]);
-            return arr
-        })
+const UnpackLineChart = ({ results, currentUser }) => {
+  function defChartData(results) {
+    const arr = [];
+    results.map((res) => {
+      arr.push([results.indexOf(res) + 1, parseFloat(res.overall_score)]);
+      return arr;
+    });
 
-        let output = {
-            label: 'Series 1',
-            data: arr
-        }
+    const output = {
+      label: 'Series 1',
+      data: arr,
+    };
 
-        return output;
-    }
-    
-    function defPlannedChartData() {
-        currentUser = {
-            created_at: "2021-09-06T14:27:15.787Z",
-            due_date: "2022-10-30",
-            email: "brad@mail.com",
-            id: 4,
-            level_current: null,
-            level_initial: "7.0",
-            level_plan: "8.5",
-            name: "Brad",
-            password_digest: "$2a$12$kSloCpTQ6RJTO.04tn1ZmuPeUVl6KfdlvurENkCtXxhIZ9Iquaqzy",
-        }
-        let planned_score = parseFloat(currentUser.level_plan);
-        let initial_score = parseFloat(currentUser.level_initial);
-        let diff_score = planned_score - initial_score;
+    return output;
+  }
 
-        let execution_period = 30
+  function defPlannedChartData() {
+    const plannedScore = parseFloat(currentUser.level_plan);
+    const initialScore = parseFloat(currentUser.level_initial);
+    const diffScore = plannedScore - initialScore;
 
-        let required_daily_progress = diff_score/execution_period;
+    const executionPeriod = 30;
 
-        let arr = [[0, initial_score]]
-        let current = initial_score;
-        for (let i = 1; i <= execution_period; i++) {
-            arr.push([i, current += required_daily_progress])
-        }
+    const requiredDailyProgress = diffScore / executionPeriod;
 
-        let output = {
-            label: 'Series 3',
-            data: arr
-        }
-
-        return output;
+    const arr = [[0, initialScore]];
+    let current = initialScore;
+    for (let i = 1; i <= executionPeriod; i += 1) {
+      arr.push([i, current += requiredDailyProgress]);
     }
 
-    const data = React.useMemo(
-        () => [
-            defChartData(results),
-            defPlannedChartData()
-        ],
-        [results]
-    )
+    const output = {
+      label: 'Series 3',
+      data: arr,
+    };
 
-    const axes = React.useMemo(
-        () => [
-            { primary: true, type: 'linear', position: 'bottom' },
-            { type: 'linear', position: 'left' }
-        ],
-        []
-    )
-    
-    const lineChart = (
-        // A react-chart hyper-responsively and continuously fills the available
-        // space of its parent element automatically
-        <div className="graph">
-            {<Chart data={data} axes={axes} />}
-        </div>
-    )
-    return lineChart
-}
+    return output;
+  }
+
+  const data = React.useMemo(
+    () => [
+      defChartData(results),
+      defPlannedChartData(),
+    ],
+    [results],
+  );
+
+  const axes = React.useMemo(
+    () => [
+      { primary: true, type: 'linear', position: 'bottom' },
+      { type: 'linear', position: 'left' },
+    ],
+    [],
+  );
+
+  const lineChart = (
+    // A react-chart hyper-responsively and continuously fills the available
+    // space of its parent element automatically
+    <div className="graph">
+      <Chart data={data} axes={axes} />
+    </div>
+  );
+  return lineChart;
+};
 
 export default UnpackLineChart;
+
+UnpackLineChart.propTypes = {
+  currentUser: PropTypes.instanceOf(Object).isRequired,
+};

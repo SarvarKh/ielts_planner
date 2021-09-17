@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { fetchDetailResult } from '../../actions';
 import { useParams } from 'react-router-dom';
+import { fetchDetailResult } from '../../actions';
 import UnpackTrackDetail from '../presentation/UnpackTrackDetail';
 
 const TrackDetail = ({ detailResult, fetchDetailResult }) => {
-    const { id } = useParams();
-    useEffect(() => {
-        fetchDetailResult(id);
-    }, [fetchDetailResult, id]);
+  const { id } = useParams();
+  useEffect(() => {
+    fetchDetailResult(id);
+  }, [fetchDetailResult, id]);
 
-    return (
-        <main>
-        {
+  return (
+    <main>
+      {
           Object.keys(detailResult).length !== 0
             ? <UnpackTrackDetail detailResult={detailResult.detailResult} />
             : (
@@ -22,9 +22,9 @@ const TrackDetail = ({ detailResult, fetchDetailResult }) => {
               </h2>
             )
         }
-      </main>
-    )
-}
+    </main>
+  );
+};
 
 const mapStateToProps = (state) => ({
   detailResult: state.detailResult,
