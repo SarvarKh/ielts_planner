@@ -54,7 +54,7 @@ const UnpackProgress = ({ results }) => {
                           </div>
                         </div>
                       )
-                      : <div>Loading...</div>
+                      : <div className="t-empty">Please add scores to see the charts.</div>
                 }
       </main>
       <Footer />

@@ -17,7 +17,7 @@ const TrackDetail = ({ detailResult, fetchDetailResult }) => {
           Object.keys(detailResult).length !== 0
             ? <UnpackTrackDetail detailResult={detailResult.detailResult} />
             : (
-              <h2>
+              <h2 className="t-empty">
                 Loading...
               </h2>
             )

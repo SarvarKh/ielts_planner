@@ -284,7 +284,7 @@ main {
   color: var(--second);
   width: 80%;
   margin: 1rem auto 0 auto;
-  font-size: 1.2rem;
+  text-indent: 0.5rem;
 }
 
 /* Progress */
