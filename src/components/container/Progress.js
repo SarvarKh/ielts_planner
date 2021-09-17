@@ -15,7 +15,7 @@ const Progress = ({ fetchResults, results }) => {
   }
   return results.results !== undefined
     ? (<UnpackProgress results={results.results} />)
-    : <h2>Loading...</h2>;
+    : <h2 className="t-empty">Loading...</h2>;
 };
 
 const mapStateToProps = (state) => ({

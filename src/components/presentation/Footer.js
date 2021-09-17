@@ -3,9 +3,8 @@ import { NavLink } from 'react-router-dom';
 const Footer = () => (
   <footer>
     <NavLink
-      to={{
-        pathname: '/measurement',
-      }}
+      to="/measurement"
+      exact
       activeClassName="active"
     >
       <span className="f-icons">
@@ -17,9 +16,8 @@ const Footer = () => (
     </NavLink>
 
     <NavLink
-      to={{
-        pathname: '/track',
-      }}
+      to="/track"
+      exact
       activeClassName="active"
     >
       <span className="f-icons">
@@ -31,9 +29,8 @@ const Footer = () => (
     </NavLink>
 
     <NavLink
-      to={{
-        pathname: '/progress',
-      }}
+      to="/progress"
+      exact
       activeClassName="active"
     >
       <span className="f-icons">
@@ -46,9 +43,8 @@ const Footer = () => (
     </NavLink>
 
     <NavLink
-      to={{
-        pathname: '/more',
-      }}
+      to="/more"
+      exact
       activeClassName="active"
     >
       <span className="f-icons">
