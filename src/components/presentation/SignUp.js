@@ -13,7 +13,7 @@ const SignUp = () => {
     });
     return response.json()
       .then((data) => {
-        sessionStorage.setItem('token', JSON.stringify(data.auth_token));
+        sessionStorage.setItem('token', data.auth_token);
         history.push('/measurement');
       });
   }

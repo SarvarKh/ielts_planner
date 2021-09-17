@@ -21,5 +21,5 @@ const Navbar = ({ title }) => {
 export default Navbar;
 
 Navbar.propTypes = {
-  title: PropTypes.instanceOf(Object).isRequired,
+  title: PropTypes.string.isRequired,
 };

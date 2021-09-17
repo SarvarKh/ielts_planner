@@ -34,5 +34,5 @@ const MeasurementForm = ({ exam }) => {
 export default MeasurementForm;
 
 MeasurementForm.propTypes = {
-  exam: PropTypes.instanceOf(Object).isRequired,
+  exam: PropTypes.string.isRequired,
 };
