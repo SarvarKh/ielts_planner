@@ -18,6 +18,7 @@ const UnpackMore = ({ currentUser }) => (
           <i className="fas fa-crosshairs" />
           <div>
             Your goal
+            {' '}
             {currentUser.level_plan}
           </div>
         </div>
@@ -25,6 +26,7 @@ const UnpackMore = ({ currentUser }) => (
           <i className="fas fa-clipboard" />
           <div>
             Your started at
+            {' '}
             {currentUser.level_initial}
           </div>
         </div>
