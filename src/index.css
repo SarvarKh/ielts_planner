@@ -280,6 +280,13 @@ main {
   text-align: center;
 }
 
+.t-empty {
+  color: var(--second);
+  width: 80%;
+  margin: 1rem auto 0 auto;
+  font-size: 1.2rem;
+}
+
 /* Progress */
 .progress {
   display: flex;

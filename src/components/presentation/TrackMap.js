@@ -22,27 +22,27 @@ const TrackMap = ({ results, clickOnDetailResult }) => {
     <div>
       <Navbar title="Track it" />
       <main className="track">
-        {
-                    results.slice(0).reverse().map((res) => (
-                      <Link
-                        to={{
-                          pathname: `/track/${res.id}`,
-                          state: res,
-                        }}
-                        key={res.id}
-                        onClick={() => clickOnDetailResult(res.id)}
-                        className="track-item"
-                      >
-                        <CircularProgressbar value={res.overall_score} maxValue={9} />
-                        <div>{readableDate(res.created_at)}</div>
-                        <div>
-                          <div>{res.overall_score}</div>
-                          <div>score</div>
-                        </div>
-                        <i className="fas fa-arrow-circle-right" />
-                      </Link>
-                    ))
-                }
+        { Object.keys(results).length !== 0
+          ? results.slice(0).reverse().map((res) => (
+            <Link
+              to={{
+                pathname: `/track/${res.id}`,
+                state: res,
+              }}
+              key={res.id}
+              onClick={() => clickOnDetailResult(res.id)}
+              className="track-item"
+            >
+              <CircularProgressbar value={res.overall_score} maxValue={9} />
+              <div>{readableDate(res.created_at)}</div>
+              <div>
+                <div>{res.overall_score}</div>
+                <div>score</div>
+              </div>
+              <i className="fas fa-arrow-circle-right" />
+            </Link>
+          ))
+          : <div className="t-empty">Please add your scores from &quot;Add measure&quot; section.</div>}
       </main>
       <Footer />
     </div>
