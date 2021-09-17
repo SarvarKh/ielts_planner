@@ -72,6 +72,11 @@ a {
   text-decoration: none;
 }
 
+main a {
+  text-decoration: none;
+  color: var(--second);
+}
+
 .authen-text a {
   color: #62b5e5;
   font-weight: bolder;
