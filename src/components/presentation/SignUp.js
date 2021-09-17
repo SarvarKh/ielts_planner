@@ -59,6 +59,7 @@ const SignUp = () => {
       </form>
       <div className="authen-text">
         Go back to the
+        {' '}
         <Link to="/log_in">Log in page</Link>
       </div>
     </div>
