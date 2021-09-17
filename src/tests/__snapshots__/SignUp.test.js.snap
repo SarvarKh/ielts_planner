@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="authen-page"
+>
+  <div>
+    <i
+      className="fas fa-user-circle"
+    />
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      placeholder="Your name"
+      required={true}
+      type="text"
+    />
+    <input
+      placeholder="Your email"
+      required={true}
+      type="email"
+    />
+    <input
+      placeholder="Password"
+      required={true}
+      type="password"
+    />
+    <input
+      placeholder="Confirm password"
+      required={true}
+      type="password"
+    />
+    <label
+      htmlFor="level_initial"
+    >
+      <span>
+        Your current IELTS score
+      </span>
+      <input
+        id="level_initial"
+        max="9"
+        min="0"
+        name="level_initial"
+        placeholder="Enter 0 ~ 9"
+        required={true}
+        step=".5"
+        type="number"
+      />
+    </label>
+    <label
+      htmlFor="level_plan"
+    >
+      <span>
+        Your desired IELTS score
+      </span>
+      <input
+        id="level_plan"
+        max="9"
+        min="0"
+        name="level_plan"
+        placeholder="Enter 0 ~ 9"
+        required={true}
+        step=".5"
+        type="number"
+      />
+    </label>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+  <div
+    className="authen-text"
+  >
+    Go back to the
+     
+    <a
+      href="/log_in"
+      onClick={[Function]}
+    >
+      Log in page
+    </a>
+  </div>
+</div>
+`;
