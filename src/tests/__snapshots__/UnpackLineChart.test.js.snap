@@ -1,0 +1,1732 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="graph"
+>
+  <div
+    className="ReactChart "
+    onClick={[Function]}
+    style={
+      Object {
+        "height": 0,
+        "position": "relative",
+        "width": 0,
+      }
+    }
+  >
+    <svg
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+          "width": 0,
+        }
+      }
+    >
+      <g
+        style={
+          Object {
+            "transform": "translate3d(0px, 0px, 0)",
+          }
+        }
+      >
+        <rect
+          height={0}
+          style={
+            Object {
+              "fill": "#333",
+              "opacity": 0,
+              "rx": 0,
+              "ry": 0,
+              "strokeWidth": 0,
+            }
+          }
+          width={0}
+          x={-0}
+          y={-0}
+        />
+        <g
+          className="axes"
+        >
+          <g
+            className="Axis"
+            style={
+              Object {
+                "pointerEvents": "none",
+                "transform": "translate3d(0, 0px, 0)",
+              }
+            }
+          >
+            <path
+              className="domain"
+              d="
+        M 0, 6
+        V 0
+        H 0
+        V 6
+      "
+              style={
+                Object {
+                  "fill": "transparent",
+                  "opacity": 1,
+                  "stroke": "rgba(0,0,0, .1)",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <g
+              className="ticks"
+              style={Object {}}
+            >
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    0
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    2
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    4
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    6
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    8
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    10
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    12
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    14
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    16
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    18
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    20
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    22
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    24
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    26
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    28
+                  </text>
+                </g>
+              </g>
+              <g
+                className="tick"
+                style={
+                  Object {
+                    "transform": "translate3d(0px, 0, 0)",
+                  }
+                }
+              >
+                <line
+                  className="gridLine"
+                  style={
+                    Object {
+                      "fill": "transparent",
+                      "opacity": 1,
+                      "stroke": "rgba(0,0,0, .1)",
+                      "strokeWidth": "1",
+                    }
+                  }
+                  y1={0}
+                  y2={-0}
+                />
+                <g
+                  className="labelGroup"
+                >
+                  <line
+                    className="tickline"
+                    style={
+                      Object {
+                        "fill": "transparent",
+                        "opacity": 1,
+                        "stroke": "rgba(0,0,0, .1)",
+                        "strokeWidth": "1",
+                      }
+                    }
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={6}
+                  />
+                  <text
+                    className="tickLabel"
+                    dominantBaseline="hanging"
+                    style={
+                      Object {
+                        "fill": "black",
+                        "fontFamily": "sans-serif",
+                        "fontSize": 10,
+                        "opacity": 1,
+                        "transform": "translate3d(0px, 20px, 0) rotate(0deg)",
+                      }
+                    }
+                    textAnchor="middle"
+                  >
+                    30
+                  </text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+            className="Axis"
+            style={
+              Object {
+                "pointerEvents": "none",
+                "transform": undefined,
+              }
+            }
+          >
+            <path
+              className="domain"
+              d="
+        M -6, 0
+        H 0
+        V 0
+        H -6
+      "
+              style={
+                Object {
+                  "fill": "transparent",
+                  "opacity": 1,
+                  "stroke": "rgba(0,0,0, .1)",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <g
+              className="ticks"
+              style={Object {}}
+            />
+          </g>
+        </g>
+        <g
+          className="Series"
+          style={
+            Object {
+              "pointerEvents": "none",
+            }
+          }
+        >
+          <g>
+            <path
+              d="M0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaNC0,NaN,0,NaN,0,NaN"
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "none",
+                  "line": Object {},
+                  "opacity": 1,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": 2,
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+            <circle
+              cx={0}
+              cy={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              r={1}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "#fc6868",
+                  "line": Object {},
+                  "opacity": 1,
+                  "r": 2,
+                  "rectangle": Object {},
+                  "stroke": "#fc6868",
+                  "strokeWidth": "1",
+                }
+              }
+            />
+          </g>
+          <g>
+            <path
+              d={null}
+              style={
+                Object {
+                  "area": Object {},
+                  "circle": Object {},
+                  "color": undefined,
+                  "fill": "none",
+                  "line": Object {},
+                  "opacity": 1,
+                  "rectangle": Object {},
+                  "stroke": "#4ab5eb",
+                  "strokeWidth": 2,
+                }
+              }
+            />
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
