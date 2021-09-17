@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <svg
+    className="CircularProgressbar "
+    data-test-id="CircularProgressbar"
+    style={Object {}}
+    viewBox="0 0 100 100"
+  >
+    <path
+      className="CircularProgressbar-trail"
+      d="
+      M 50,50
+      m 0,-46
+      a 46,46 0 1 1 0,92
+      a 46,46 0 1 1 0,-92
+    "
+      fillOpacity={0}
+      strokeWidth={8}
+      style={
+        Object {
+          "strokeDasharray": "289.02652413026095px 289.02652413026095px",
+          "strokeDashoffset": "0px",
+        }
+      }
+    />
+    <path
+      className="CircularProgressbar-path"
+      d="
+      M 50,50
+      m 0,-46
+      a 46,46 0 1 1 0,92
+      a 46,46 0 1 1 0,-92
+    "
+      fillOpacity={0}
+      strokeWidth={8}
+      style={
+        Object {
+          "strokeDasharray": "289.02652413026095px 289.02652413026095px",
+          "strokeDashoffset": "289.02652413026095px",
+        }
+      }
+    />
+    <text
+      className="CircularProgressbar-text"
+      style={Object {}}
+      x={50}
+      y={50}
+    >
+      0
+    </text>
+  </svg>
+  <div
+    className="tooltip"
+  >
+    <span
+      className="tooltiptext"
+    >
+      Valid only for decimals between 0.0 and 9.0
+    </span>
+    <label />
+    <input
+      max="9"
+      min="0"
+      onChange={[Function]}
+      placeholder="Enter score"
+      required={true}
+      step=".5"
+      type="number"
+    />
+  </div>
+</div>
+`;
