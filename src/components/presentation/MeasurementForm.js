@@ -1,17 +1,18 @@
 import { CircularProgressbar } from 'react-circular-progressbar';
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import '../../circle-styling.css';
 
-const MeasurementForm = ({ exam, focus }) => {
-  const [cir_value, setCir_value] = useState(0);
+const MeasurementForm = ({ exam }) => {
+  const [cirValue, setcirValue] = useState(0);
 
   const setScoreValue = (e) => {
-    setCir_value(parseFloat(e.target.value).toFixed(1));
+    setcirValue(parseFloat(e.target.value).toFixed(1));
   };
 
   return (
     <div>
-      <CircularProgressbar value={cir_value} maxValue={9} text={`${cir_value}`} />
+      <CircularProgressbar value={cirValue} maxValue={9} text={`${cirValue}`} />
       <div className="tooltip">
         <span className="tooltiptext">Valid only for decimals between 0.0 and 9.0</span>
         <label htmlFor={exam}>{exam}</label>
@@ -24,7 +25,6 @@ const MeasurementForm = ({ exam, focus }) => {
           placeholder="Enter score"
           required
           onChange={(e) => setScoreValue(e)}
-          autoFocus={focus}
         />
       </div>
     </div>
@@ -32,3 +32,7 @@ const MeasurementForm = ({ exam, focus }) => {
 };
 
 export default MeasurementForm;
+
+MeasurementForm.propTypes = {
+  exam: PropTypes.instanceOf(Object).isRequired,
+};

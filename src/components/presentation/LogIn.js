@@ -3,17 +3,6 @@ import { Link, useHistory } from 'react-router-dom';
 const LogIn = () => {
   const history = useHistory();
 
-  const handleLogin = async (e) => {
-    e.preventDefault();
-    const user_input = {
-      email: e.target[0].value,
-      password: e.target[1].value,
-    };
-
-    const url_log_in = 'https://dry-brushlands-93092.herokuapp.com/auth/login';
-    postData(url_log_in, user_input);
-  };
-
   async function postData(url = '', data = {}) {
     const response = await fetch(url, {
       method: 'POST',
@@ -28,6 +17,17 @@ const LogIn = () => {
         history.push('/measurement');
       });
   }
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    const userInput = {
+      email: e.target[0].value,
+      password: e.target[1].value,
+    };
+
+    const urlLogIn = 'https://dry-brushlands-93092.herokuapp.com/auth/login';
+    postData(urlLogIn, userInput);
+  };
 
   return (
     <div className="authen-page">

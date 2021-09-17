@@ -17,7 +17,9 @@ const Track = ({ fetchResults, fetchDetailResult, results }) => {
   if (sessionStorage.getItem('token') === 'undefined' || sessionStorage.getItem('token') === null) {
     return <Redirect to="/log_in" />;
   }
-  return results.results !== undefined ? (<TrackMap results={results.results} clickOnDetailResult={clickOnDetailResult} />) : <h2>Loading...</h2>;
+  return results.results !== undefined
+    ? (<TrackMap results={results.results} clickOnDetailResult={clickOnDetailResult} />)
+    : <h2>Loading...</h2>;
 };
 
 const mapStateToProps = (state) => ({

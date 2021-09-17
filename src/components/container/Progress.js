@@ -13,7 +13,9 @@ const Progress = ({ fetchResults, results }) => {
   if (sessionStorage.getItem('token') === 'undefined' || sessionStorage.getItem('token') === null) {
     return <Redirect to="/log_in" />;
   }
-  return results.results !== undefined ? (<UnpackProgress results={results.results} />) : <h2>Loading...</h2>;
+  return results.results !== undefined
+    ? (<UnpackProgress results={results.results} />)
+    : <h2>Loading...</h2>;
 };
 
 const mapStateToProps = (state) => ({

@@ -13,7 +13,9 @@ const More = ({ currentUser, fetchCurrentUser }) => {
   if (sessionStorage.getItem('token') === 'undefined' || sessionStorage.getItem('token') === null) {
     return <Redirect to="/log_in" />;
   }
-  return currentUser.currentUser !== undefined ? <UnpackMore currentUser={currentUser.currentUser} /> : <h2>Loading...</h2>;
+  return currentUser.currentUser !== undefined
+    ? <UnpackMore currentUser={currentUser.currentUser} />
+    : <h2>Loading...</h2>;
 };
 
 const mapStateToProps = (state) => ({

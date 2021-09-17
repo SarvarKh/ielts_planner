@@ -9,7 +9,9 @@ const MyChart = ({ results, currentUser, fetchCurrentUser }) => {
     fetchCurrentUser();
   }, [fetchCurrentUser]);
 
-  return currentUser.currentUser !== undefined ? <UnpackLineChart results={results} currentUser={currentUser.currentUser} /> : <h2>Loading...</h2>;
+  return currentUser.currentUser !== undefined
+    ? <UnpackLineChart results={results} currentUser={currentUser.currentUser} />
+    : <h2>Loading...</h2>;
 };
 
 const mapStateToProps = (state) => ({
@@ -20,5 +22,6 @@ export default connect(mapStateToProps, { fetchCurrentUser })(MyChart);
 
 MyChart.propTypes = {
   currentUser: PropTypes.instanceOf(Object).isRequired,
+  results: PropTypes.instanceOf(Object).isRequired,
   fetchCurrentUser: PropTypes.func.isRequired,
 };
