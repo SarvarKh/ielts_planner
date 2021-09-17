@@ -47,6 +47,7 @@ const LogIn = () => {
         <div>Have not you signed up yet?</div>
         <div>
           Go to the
+          {' '}
           <Link to="/sign_up">Sign up page</Link>
         </div>
       </div>
