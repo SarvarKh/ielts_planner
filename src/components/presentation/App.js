@@ -21,6 +21,7 @@ function App() {
         <Route exact path="/track/:id" component={TrackDetail} />
         <Route exact path="/progress" component={Progress} />
         <Route exact path="/more" component={More} />
+        <Route exact path="/" component={LogIn} />
         <Route component={Error} />
       </Switch>
     </BrowserRouter>
