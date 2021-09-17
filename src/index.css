@@ -110,17 +110,24 @@ footer {
   width: 100%;
 }
 
+footer li:hover {
+  background: var(--first);
+}
+
+.active {
+  background-color: var(--first);
+}
+
 .f-icons svg {
   width: 1.4rem;
   color: #fff;
 }
 
-footer ul {
+footer {
   display: flex;
 }
 
-.f-con li {
-  list-style: none;
+footer a {
   background-color: var(--second);
   display: block;
   flex: 1;

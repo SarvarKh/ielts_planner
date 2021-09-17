@@ -19,7 +19,7 @@ const Track = ({ fetchResults, fetchDetailResult, results }) => {
   }
   return results.results !== undefined
     ? (<TrackMap results={results.results} clickOnDetailResult={clickOnDetailResult} />)
-    : <h2>Loading...</h2>;
+    : <h2 className="t-empty">Loading...</h2>;
 };
 
 const mapStateToProps = (state) => ({
