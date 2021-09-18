@@ -16,6 +16,7 @@ This app also shows to users their progress and compares it with planned daily s
 - A user can sign up and log in using his email and password.
 - A user can add his measurements
 - A user can track his progress on the app monthly or daily through the track.it or progress pages.
+- A user can compare their actual progress against planned one to acheive desired score.
 - A user can see a summary of his measurements.
 
 ## Built With
