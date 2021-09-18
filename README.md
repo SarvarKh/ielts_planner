@@ -38,6 +38,10 @@ This app also shows to users their progress and compares it with planned daily s
 
 [Live Demo Link](https://ielts-planner.netlify.app/)
 
+### Test Account:
+email: brad@mail.com
+password: brad
+
 ## Testing with Jest & React Testing Library
 
 <div align="center">
