@@ -55,10 +55,10 @@ const Measurement = () => {
       <Navbar title="Add measurement" />
       <main>
         <form onSubmit={(e) => handleAddingScores(e)} className="measurement">
-          <MeasurementForm exam="writing_score" />
-          <MeasurementForm exam="speaking_score" />
-          <MeasurementForm exam="reading_score" />
-          <MeasurementForm exam="listening_score" />
+          <MeasurementForm exam="Writing score" />
+          <MeasurementForm exam="Speaking score" />
+          <MeasurementForm exam="Reading score" />
+          <MeasurementForm exam="Listening score" />
           <button type="submit">Submit</button>
         </form>
       </main>

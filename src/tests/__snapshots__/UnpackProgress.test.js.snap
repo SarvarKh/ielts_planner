@@ -23,7 +23,9 @@ exports[`renders correctly 1`] = `
     >
       Analyze your progress against plan.
     </h3>
-    <h2>
+    <h2
+      className="t-empty"
+    >
       Loading...
     </h2>
     <div

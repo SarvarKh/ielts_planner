@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 it('renders correctly', () => {
   const tree = renderer.create(
   <BrowserRouter>
-    <MeasurementForm />
+    <MeasurementForm exam="Writing score" />
   </BrowserRouter>
   ).toJSON();
   expect(tree).toMatchSnapshot();

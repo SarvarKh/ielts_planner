@@ -59,10 +59,15 @@ exports[`renders correctly 1`] = `
     >
       Valid only for decimals between 0.0 and 9.0
     </span>
-    <label />
+    <label
+      htmlFor="Writing score"
+    >
+      Writing score
+    </label>
     <input
       max="9"
       min="0"
+      name="Writing score"
       onChange={[Function]}
       placeholder="Enter score"
       required={true}

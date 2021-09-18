@@ -15,7 +15,7 @@ const More = ({ currentUser, fetchCurrentUser }) => {
   }
   return currentUser.currentUser !== undefined
     ? <UnpackMore currentUser={currentUser.currentUser} />
-    : <h2>Loading...</h2>;
+    : <h2 className="t-empty">Loading...</h2>;
 };
 
 const mapStateToProps = (state) => ({

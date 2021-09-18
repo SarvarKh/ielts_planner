@@ -4,7 +4,9 @@ exports[`renders correctly 1`] = `
 <nav>
   <div
     className="n-title"
-  />
+  >
+    More
+  </div>
   <button
     onClick={[Function]}
     type="button"
