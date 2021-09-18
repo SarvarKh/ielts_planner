@@ -4,9 +4,6 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import rootReducer from './reducers/rootReducer';
 
 const initialState = {
-//   detailMeal: {
-//     detailMeal: {},
-//   },
   results: [],
   detailResult: {},
   currentUser: {},
