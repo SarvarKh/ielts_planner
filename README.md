@@ -61,6 +61,10 @@ To get a local copy up and running follow these simple example steps.
     npm start
 Last step will open http://localhost:3000 to view it in the browser.
 
+### Run tests
+- Go to your terminal
+- Run npm test to run all the tests.
+
 ## Authors
 
 👤 **Sarvar Khalimov**
