@@ -42,10 +42,10 @@ This app also shows to users their progress and compares it with planned daily s
 To get a local copy up and running follow these simple example steps.
 
 ### Setup
-    Step 1: git clone https://github.com/SarvarKh/ielts_planner_api.git
+    Step 1: git clone https://github.com/SarvarKh/ielts_planner.git
     
     Step 2 - navigate to the cloned directory:
-    cd Recipes-catalogue
+    cd ielts_planner
 
     Step 3 - install npm pckage manager:
     npm install
@@ -66,7 +66,7 @@ Last step will open http://localhost:3000 to view it in the browser.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/SarvarKh/ielts_planner_api/issues).
+Feel free to check the [issues page](https://github.com/SarvarKh/ielts_planner/issues).
 
 ## Show your support
 
