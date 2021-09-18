@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
-import Login from '../components/presentation/Login';
+import LogIn from '../components/presentation/LogIn';
 
 it('renders correctly', () => {
   const tree = renderer.create(
     <BrowserRouter>
-      <Login />
+      <LogIn />
     </BrowserRouter>,
   ).toJSON();
   expect(tree).toMatchSnapshot();
