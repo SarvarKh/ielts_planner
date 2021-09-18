@@ -12,6 +12,12 @@ This app also shows to users their progress and compares it with planned daily s
   <img src="screenshots/03_samsung.jpg?raw=true" width="45%" height="auto"/>
 </div>
 
+## Features
+- A user can sign up and log in using his email and password.
+- A user can add his measurements
+- A user can track his progress on the app monthly or daily through the track.it or progress pages.
+- A user can see a summary of his measurements.
+
 ## Built With
 
 - [React.js](https://reactjs.org/)
