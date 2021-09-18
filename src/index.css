@@ -77,6 +77,14 @@ main a {
   color: var(--second);
 }
 
+footer a {
+  background-color: var(--second);
+  display: block;
+  flex: 1;
+  text-align: center;
+  padding: 0.2rem 0;
+}
+
 .authen-text a {
   color: #62b5e5;
   font-weight: bolder;
@@ -123,16 +131,8 @@ footer li:hover {
   color: #fff;
 }
 
-footer {
+#root footer {
   display: flex;
-}
-
-footer a {
-  background-color: var(--second);
-  display: block;
-  flex: 1;
-  text-align: center;
-  padding: 0.2rem 0;
 }
 
 .f-text {
