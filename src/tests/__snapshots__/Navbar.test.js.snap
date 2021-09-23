@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<nav>
+  <div
+    className="n-title"
+  >
+    More
+  </div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    <i
+      className="fas fa-power-off"
+    />
+  </button>
+</nav>
+`;
